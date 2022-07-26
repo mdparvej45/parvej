@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(41, 87, 88);
+}
+body{
+    background-color: #eee;
+
+
+}
+/* Header Section start */
+.continer{
+    margin: 0 auto;
+    width: 70vw;
+    background-color: rgba(127, 227, 255, 0.281);
+
+}
+img.profile{
+    width: 80px;
+    height: 75px;
+    border-radius: 40px;
+    padding:10px 15px;
+    float: left;
+}
+.heading{
+    float: left;
+    margin: 0px 10px;
+    padding:10px 0px;
+
+}
+.heading h5{
+    text-align: right;
+    text-decoration: overline;
+}
+.continer .divided{
+    width: 1px;
+    height: 60px;
+    color: black;
+    float: left;
+    border: 1px solid black;
+    margin: 10px 0px 10px 4px;
+    outline: none;
+}
+.contract{
+    float: right;
+    padding:10px 10px;
+}
+.contract p{
+    text-align: right;
+    font-size: 13px;
+}
+.contract p a{
+    text-decoration: none;
+}
+.contract p a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.clear-divition{
+    clear: both;
+}
+.hr1{
+    border: 3px solid black;
+    border-bottom: none;
+    margin: 0 auto;
+}
+/* Header Section Closed */
+
+/* Mian Section Start */
+/* Personal Information Start */
+.personal_heading{
+    float: left;
+    padding: 15px 0px;
+    padding-left: 5px;
+}
+.personal_detiles{
+    float: right;
+    padding: 15px 0px;
+    padding-right: 5px;
+}
+.personal_detiles p{
+    font-size: 13px;
+    text-align: left;
+}
+.clear2{
+    clear: both;
+}
+.hr2{
+    border-top: 1px solid black;
+    margin: 0 auto;
+}
+/* Personal Information Closed */
+
+/* Working exprience start */
+
+.working_exprience .warking_heading{
+    float: left;
+    padding: 15px 0px 0px 5px;
+}
+.working_exprience .working_detiles{
+    float: right;
+    padding: 15px 100px 5px 0px;
+}
+.working_exprience .working_detiles p{
+    padding-top: 5px;
+    line-height: 15px;
+}
+.clear3{
+    clear: both;
+}
+.hr3{
+    border-top: 1px solid black;
+}
+/* Working exprience Closed */
+
+/* Acadamic Section Start */
+.acadamic .acadamic_qualification{
+    float: left;
+    padding: 15px 0px 0px 5px;
+    font-size:13px
+}
+.acadamic .acadamic_datiles{
+    font-size:13px
+}
+.acadamic_datiles .acadamic_table{
+    padding: 5px 10px;
+}
+/* Acadamic Section Closed */

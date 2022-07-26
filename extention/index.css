@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+@keyframes text-reveal-box {
+    50%{
+        width: 100%;
+        left: 5%;
+        background-color: cornflowerblue;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+        background-color: white;
+    }
+}
+@keyframes text-reveal {
+    100%{
+        color: black;
+    }
+    
+}
+@keyframes text-reveal-box2 {
+    50%{
+        width: 0;
+        left: 100%;
+        background-color: white;
+    }
+    100%{
+        width: 100%;
+        left: 5%;
+        background-color: cornflowerblue;
+    }
+    
+}
+/* Navbar Starting Hare */
+.main-navbar{
+    width: 100vw;
+    height: 12%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.669);
+    z-index: 10;
+    position:fixed;
+
+}
+.navbar-image{
+    width: 20%;
+    height: auto;
+    margin: 0rem 8rem;
+}
+.navbar-image h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    font-size: 2.2rem;
+    margin: .7rem;
+    color: rgba(0, 0, 255, .5);
+}
+.navbar-button{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-button a{
+    padding: .1rem .8rem;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    color: black;
+    font-family: sans-serif;
+    position: relative;
+    font-weight: bolder;
+}
+.navbar-button a::after{
+    background-color: rgba(0, 0, 255, .6);
+    color: white;
+}
+.navbar-button a:hover{
+    color: rgba(0, 0, 255, .6);
+    transition-duration: .3s;
+    border-bottom: .2rem solid rgba(0, 0, 255, .6);;
+}
+/* Navbar Ending Hare */
+
+/* Home section Starting Hare */
+.home-section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/first-banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.home-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.home-image{
+    margin-top: 6rem;
+    width: 100%;
+    height: 100%;
+}
+.home-image img{
+    width: 70%;
+    height: 80%;
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+.home-content{
+    margin-top: 6rem;
+    width: 100%; 
+    height: 100%;
+    position: relative;
+}
+.home-content-hello{
+    margin: 2rem 0rem 0rem 0rem;
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.home-content-hello h3{
+    font-size: 3rem;
+    margin: 5rem 0rem 0rem 4.9rem;
+    line-height: 0rem;
+}
+.home-content-hello div{
+    width: 90%;
+    height: 2%;
+    background-color: black;
+    margin: 5rem 8rem 0rem 0rem;
+}
+.home-content h1{
+    width: 100%;
+    height: 20%;
+    margin: 0rem 0rem 0rem 5rem;
+    font-size: 4.3rem;
+    line-height: 8rem;
+    color: transparent;
+    animation: text-reveal 1s ease forwards;
+    animation-delay: 1.2s;
+}
+.home-content h1 span{
+    position: absolute;
+    top:25%;
+    left:5%;
+    height: 13%;
+    width: 0%;
+    background-color: white;
+    animation: text-reveal-box 1s ease-in-out;
+    animation-delay: .5s;
+    animation-iteration-count:2;
+}
+.home-content h4{
+    font-size: 1.5rem;
+    margin: 1rem 0rem 0rem 5rem;
+    line-height: 0rem;
+    word-spacing: .4rem;
+    letter-spacing: .1rem;
+    color: transparent;
+    animation: text-reveal 1s ease forwards;
+    animation-delay: 1.8s;
+
+}
+.home-content h4 span{
+    position: absolute;
+    top:38%;
+    left:5%;
+    height: 9%;
+    width: 0%;
+    background-color: white;
+    animation: text-reveal-box2 1s ease-in-out;
+    animation-delay: .8s;
+    animation-iteration-count:2;
+}
+.links{
+    width: 60%;
+    height: 30%;
+    margin: 1rem 0rem 0rem 5rem;
+    position: relative;
+}
+.links p{
+    color: black;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+.links .button-one{
+    padding: .8rem 1.2rem;
+    margin: 3rem 2rem;
+    font-size: bolder;
+    cursor: pointer;
+    border-radius: .3rem;
+    text-decoration: none;
+    color: white;
+    position:absolute;
+    border: 1px solid white;
+    top: 1rem;
+    background-color: transparent;
+}
+.links .button-tow{
+    padding: .8rem 1.2rem;
+    margin: 3rem 2rem;
+    font-size: bolder;
+    cursor: pointer;
+    border-radius: .3rem;
+    text-decoration: none;
+    position:absolute;
+    border: 1px solid white;
+    top: 1rem; 
+    left: 10rem;
+    color: white;
+}
+.button-one:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition-duration: 1s;
+}
+.button-one:active{
+    transition-duration: .3s;
+    background-color: rgba(0, 0, 0, 0.347);
+}
+.button-tow:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition-duration: 1s;
+}
+.button-tow:active{
+    transition-duration: .3s;
+    background-color: rgba(0, 0, 0, 0.347);
+}
+/* Home section Ending Hare */
+
+/* About me Section Starting Hare */
+.about-me-section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/second-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.about-me-image{
+    width: 100%;
+    height: 100%;
+    margin-top: 4rem;
+}
+.about-me-image img{
+    width: 85%;
+    height: 80%;
+    margin-top: 3rem;
+    margin-left: 6rem; 
+}
+.about-me-content h3{
+    font-size: 2.5rem;
+    margin: 8rem 0rem 0rem 9rem;
+
+}
+.about-me-content p{
+    color: black;
+    margin: 1rem 4.5rem 0rem 9rem;
+    line-height: 1.5rem;
+    word-spacing: .3rem;
+}
+.about-me-content button{
+    margin: 1rem 0rem 0rem 9rem;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: none;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.about-me-content button:hover{
+    background-color: rgba(0, 0, 0, 0.557);
+    color: white;
+    border: 1px solid white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.about-me-content button:hover a{
+    color: white;
+}
+
+.about-me-content button a{
+    text-decoration: none;
+    color: black;
+}
+.about-me-content button a:hover{
+    color: white;
+}
+/* About me Section Ending Hare */
+
+/* Exprience working Section Starting */
+.exprience-working{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/third-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.exprience-working-company{
+    display: grid;
+    grid-template-rows: 40% 40%;
+    margin: 10rem 0rem 0rem 1rem;
+}
+.exprience-working-company1{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.exprience-working-company2{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-top: .5rem;
+}
+.image{
+    margin: 0 auto;
+    padding: .5rem 3rem;
+    opacity: .4;
+    border: 1px dashed rgb(114, 114, 114);
+   
+}
+.image:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.279), -2px -2px 10px rgba(255, 255, 255, 0.279);
+}
+.image img{
+    width: 120px;
+    height: 80px;
+    margin-top: 1.5rem;
+}
+.exprience-working-content{
+    width: 70%;
+    height: 65%;
+    margin: 9rem 0rem 0rem 3rem;
+    background-color: rgba(240, 248, 255, 0.664);
+}
+.exprience-working-contents{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    margin: 0rem 0rem 0rem 1.5rem;
+}
+.exprience-working-content1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 1rem;
+}
+.exprience-working-content1 h1{
+    font-size: 6rem;
+    font-weight: bolder;
+    color: rgba(0, 0, 255, 0.637);
+    overflow: hidden;
+}
+.exprience-working-content1 h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgba(0, 0, 255, 0.637);
+    overflow: hidden;
+}
+.exprience-working-content2{
+    margin: 4rem 4rem 0rem 2rem;
+}
+#exprience-working-h4{
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    overflow: hidden;
+    color: rgba(0, 0, 255, 0.637);
+    border-bottom: 2px dashed rgba(0, 0, 255, 0.637);
+}
+.exprience-working-content2 h4{
+    margin-top: .8rem;
+    letter-spacing: .2rem;
+    overflow: hidden;
+    color: rgb(70, 70, 70)
+}
+/* Exprience working Section Endinging */
+
+/* Services Offeres section starting */
+.services-offers-continer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/fourth-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.service-text{
+    width: 50%;
+    height: 35%;
+    padding-top: 6rem;
+    margin: 0 auto;
+}
+.service-text h1{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.service-text p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+.service-contentiner{
+    width: 100%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content:space-evenly;
+}
+.service-content-continer{
+    width: 95%;
+    height: 85%;
+    background-color: white;
+    box-shadow: -2px -2px 10px rgba(114, 114, 144, .5), 2px 2px 10px rgba(114, 114, 144, .5);
+}
+.service-content-continer:hover{
+    box-shadow: 1px 1px 10px black;
+    cursor:default;
+    transition-duration: .4s;
+}
+.service-content-continer:hover img{
+    transition-duration: .5s;
+    transform: rotate(360deg);
+}
+.service-content{
+    background-color: white;
+    height: 85%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 0rem 1rem 0rem;;
+
+}
+.service-content img{
+    margin: 1.5rem 0rem 0rem 5.8rem;
+}
+.service-content h3{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.838) ;
+}
+.service-content p{
+    margin: 1rem 2rem;
+    word-spacing: .2rem;
+    letter-spacing: .1rem;
+    text-align: justify;
+    color: rgb(114, 114, 144);
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Services Offeres section ending */
+
+
+/* Gallery Section starting hare */
+
+.gallery-main-continer{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/third-banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.img{
+    position: relative;
+}
+.img img{
+    width: 300px;
+    height: 320px;
+    margin: 9.5rem 0rem 0rem 4rem;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    font-weight: bolder;
+}
+.button{
+    position: absolute;
+    bottom: 19%;
+    left: 45%;
+    border: 3px solid transparent;
+    background: rgba(255, 255, 255, 0.605);
+    color:black;
+    padding: .3rem;
+    display: none;
+}
+.img img:hover + .button{
+    border-radius: 2rem;
+    box-shadow: 2px 2px 10px rgb(73, 73, 73);
+    transition-duration: 1s;
+    display: inline-block;
+    cursor:default;
+}
+.img img:hover{
+    box-shadow: 2px 2px 10px rgb(73, 73, 73);
+    transition-duration: 1s;
+}
+
+/* Gallery Section ending hare */
